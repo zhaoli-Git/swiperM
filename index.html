@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script>
+		var num = 1 / window.devicePixelRatio;
+		document.write('<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale='+num+',minimum-scale='+num+',maximum-scale='+num+'" />')
+		
+		var fontNum = document.documentElement.clientWidth / 10.8;
+		var html = document.getElementsByTagName('html')[0];
+		html.style.fontSize = fontNum + 'px';
+	</script>
+</head>
+<body>
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	        <div class="swiper-slide">
+	        	<div class="top ani" swiper-animate-effect="zoomIn" swiper-animate-duration='1.5s' swiper-animate-delay='0.3s'>
+	        		<img src="img/one.jpg" alt="">
+	        	</div>
+	        	<div class='bottom'>
+	        		<div class='de_up'>	        			
+	        			<img src="img/txt.png" alt="" class='ani' swiper-animate-effect="fadeInDown" swiper-animate-duration='1s' 
+	        			swiper-animate-delay='1.8s'>
+	        		</div>
+	        		<div class='de_down'>
+	        			<img src="img/2016117.png" alt="" class='ani' swiper-animate-effect="fadeIn" swiper-animate-duration='1s' 
+	        			swiper-animate-delay='3.6s'>>
+	        		</div>
+	        	</div>
+	        	<div class='jiezhi ani' swiper-animate-effect="fadeInUp" 
+	        		swiper-animate-duration='1s' 
+	  				swiper-animate-delay='2.6s'>
+					<img src="img/jiezhi.png" alt="">
+				</div>
+	        </div>
+	        <!-- 第二屏幕 -->
+	        <div class="swiper-slide">
+	        	<div class='two_left ani' swiper-animate-effect="zoomIn" 
+	        		swiper-animate-duration='1s' 
+	  				swiper-animate-delay='0s'>
+	        		<img src="img/two1.jpg" alt="">
+	        	</div>	
+	        	<div class='two_right ani' swiper-animate-effect="zoomIn" 
+	        		swiper-animate-duration='1s' 
+	  				swiper-animate-delay='1s'>
+	        		<img src="img/two2.jpg" alt="">
+	        		<img src="img/t1.png" alt="" class='ani' swiper-animate-effect="fadeIn" 
+		        		swiper-animate-duration='0.5s' 
+		  				swiper-animate-delay='2.5s'>
+	        		<img src="img/t2.png" alt="" class='ani' swiper-animate-effect="fadeIn" 
+		        		swiper-animate-duration='1s' 
+		  				swiper-animate-delay='3s'>
+	        		<img src="img/t3.png" alt="" class='ani' swiper-animate-effect="fadeIn" 
+		        		swiper-animate-duration='1s' 
+		  				swiper-animate-delay='4s'>
+	        		<img src="img/t4.png" alt="" class='ani' swiper-animate-effect="fadeIn" 
+		        		swiper-animate-duration='1s' 
+		  				swiper-animate-delay='5s'>
+	  				<img src="img/t5.png" alt="" class='ani' swiper-animate-effect="fadeIn" 
+	        		swiper-animate-duration='1s' 
+	  				swiper-animate-delay='6s'>
+	        		<img src="img/fengche.gif" alt="" class='wind ani' swiper-animate-effect="fadeIn" 
+	        		swiper-animate-duration='1s' 
+	  				swiper-animate-delay='4s'>
+	        	</div>
+	        </div>
+	        <!-- 第三屏幕 开始 -->
+	        <div class="swiper-slide">
+	        	<div class='threeimg'>
+	        		<img src="img/two2.jpg" alt="" class='ani' swiper-animate-effect="swing" 
+	        		swiper-animate-duration='1s' 
+	  				swiper-animate-delay='0s' >
+	        	</div>
+	        	<div class='four_txt'>
+	        		<p class='ani fourtxt1' swiper-animate-effect="rollIn" 
+	        		swiper-animate-duration='1s' 
+	  				swiper-animate-delay='1s'>你是我</p>
+	        		<p class='ani' swiper-animate-effect="fadeInRight" 
+	        		swiper-animate-duration='1s' 
+	  				swiper-animate-delay='2s'>最重要的决定</p>
+	        	</div>	        	
+	        </div>
+	    </div>
+	    <!-- 如果需要分页器 -->
+	    <div class="swiper-pagination"></div>                                 
+	    <div class="swiper-scrollbar"></div>
+	</div>
+	<!-- 右上角音乐logo -->
+	<div id='music'>
+		<img src="img/music.gif" alt="" class='music_bg'>
+		<img src="img/music_off.png" alt="" class='music_img'>
+		<audio src="img/musicbg.mp3" autoplay='autoplay' loop='loop' class='aud'></audio>
+	</div>
+	<script src='js/swiper-3.4.2.min.js'></script>
+	<script src='js/swiper.animate1.0.2.min.js'></script>
+	<script src='js/index.js'></script>
+</body>
+</html>
